@@ -76,7 +76,8 @@ module Miasma
         'compute' => 'cloudServersOpenStack',
         'orchestration' => 'cloudOrchestration',
         'auto_scale' => 'autoscale',
-        'load_balancer' => 'cloudLoadBalancers'
+        'load_balancer' => 'cloudLoadBalancers',
+        'storage' => 'cloudFiles'
       )
 
       # Create a new api instance
@@ -109,4 +110,5 @@ module Miasma
   Models::Orchestration.autoload :Rackspace, 'miasma/contrib/rackspace/orchestration'
   Models::AutoScale.autoload :Rackspace, 'miasma/contrib/rackspace/auto_scale'
   Models::LoadBalancer.autoload :Rackspace, 'miasma/contrib/rackspace/load_balancer'
+  Models::Storage.autoload :Rackspace, 'miasma/contrib/rackspace/storage'
 end
